@@ -14,6 +14,15 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item RAW_TANZANITE = registerItem("raw_tanzanite",
             new Item(new FabricItemSettings()));
+
+    //adds a new forest mixture item made from forest-y materials
+    public static final Item FOREST_MIXTURE = registerItem("forest_mixture",
+            new Item(new FabricItemSettings()));
+
+    //adds a new forest mixture pickaxe that can be made from said material
+    public static final Item FOREST_PICKAXE = registerItem("forest_pickaxe",
+            new PickaxeItem(ToolMaterials.DIAMOND, 2, -2.6f,
+                    new FabricItemSettings().maxCount(1)));
     public static final Item TANZANITE = registerItem("tanzanite",
             new Item(new FabricItemSettings()));
 
@@ -54,6 +63,9 @@ public class ModItems {
         addToItemGroup(ModItemGroup.TANZANITE, EGGPLANT);
         addToItemGroup(ModItemGroup.TANZANITE, TANZANITE_PICKAXE);
         addToItemGroup(ModItemGroup.TANZANITE, CHOMPER_SPAWN_EGG);
+
+        addToItemGroup(ModItemGroup.TANZANITE, FOREST_MIXTURE);
+        addToItemGroup(ModItemGroup.TANZANITE, FOREST_PICKAXE);
     }
 
     public static void addToItemGroup(ItemGroup group, Item item) {
