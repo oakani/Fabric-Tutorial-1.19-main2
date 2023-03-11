@@ -27,6 +27,8 @@ import org.slf4j.LoggerFactory;
 import software.bernie.geckolib.GeckoLib;
 
 // Very important comment
+
+//very important comment #2
 public class TutorialMod implements ModInitializer {
 	public static final String MOD_ID = "tutorialmod";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
